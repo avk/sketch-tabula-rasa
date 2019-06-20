@@ -1,4 +1,4 @@
-![Tabula Rasa](./assets/Github repo card.png)
+![Tabula Rasa](./assets/GitHub-repo-card.png)
 
 # Tabula Rasa
 
