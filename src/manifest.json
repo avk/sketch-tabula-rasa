@@ -1,6 +1,7 @@
 {
   "name": "Tabula Rasa",
   "description": "Add blank backgrounds to transparent artboards",
+  "homepage": "https://github.com/avk/sketch-tabula-rasa",
   "author": "Arthur Klepchukov",
   "authorEmail": "arthur.klepchukov@gmail.com",
   "version": "0.1.0",

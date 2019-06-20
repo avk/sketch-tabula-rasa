@@ -23,5 +23,9 @@
   "devDependencies": {
     "@skpm/builder": "^0.7.0"
   },
-  "author": "Arthur Klepchukov <arthur.klepchukov@gmail.com>"
+  "author": "Arthur Klepchukov <arthur.klepchukov@gmail.com>",
+  "repository" : {
+    "type": "git",
+    "url": "git+https://github.com/avk/sketch-tabula-rasa.git"
+  }
 }
