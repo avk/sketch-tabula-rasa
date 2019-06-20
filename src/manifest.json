@@ -1,0 +1,50 @@
+{
+  "name": "Tabula Rasa",
+  "description": "Add blank backgrounds to transparent artboards",
+  "author": "Arthur Klepchukov",
+  "authorEmail": "arthur.klepchukov@gmail.com",
+  "version": "0.1.0",
+  "compatibleVersion": "55.2",
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Blank out all artboards",
+      "identifier": "tabula-rasa.add-all",
+      "handler": "AddAll",
+      "script": "./script.js"
+    },
+    {
+      "name": "Blank out any transparent artboards",
+      "identifier": "tabula-rasa.add-transparent",
+      "shortcut": "ctrl shift b",
+      "handler": "AddTransparent",
+      "script": "./script.js"
+    },
+    {
+      "name": "Make all blank artboards transparent again",
+      "identifier": "tabula-rasa.remove-all",
+      "handler": "RemoveAll",
+      "script": "./script.js"
+    },
+    {
+      "script" : "./script.js",
+      "name" : "Make all new artboards blank",
+      "handlers" : {
+        "actions": {
+          "InsertArtboard.begin": "onInsertArtboard",
+          "ArtboardChanged.finish": "onNewArtboard"
+        }
+      },
+      "identifier" : "tabula-rasa.blank-new"
+    }
+  ],
+  "menu": {
+    "title": "Tabula Rasa",
+    "items": [
+      "tabula-rasa.add-transparent",
+      "tabula-rasa.add-all",
+      "tabula-rasa.remove-all"
+    ]
+  }
+}
